@@ -9,7 +9,7 @@ const userRouter = require('./routers/user')
 const machineRouter = require('./routers/machine')
 
 const port = process.env.PORT || 3001;
-const db_hosted = 'mongodb+srv://root:root@cluster0.mjmib.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const db_hosted = 'mongodb://localhost:27017/Vmbd'
 app.use(bodyParser.json());
 app.use(morgan('dev'))
 app.use(cors());
